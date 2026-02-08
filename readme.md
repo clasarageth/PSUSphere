@@ -1,3 +1,7 @@
+credentials:
+username: geth
+pw: geth123
+
 # PSU Sphere
 
  PSU Sphere is a centralized web application designed to manage student organizations, programs, and memberships within the university. It provides a structured platform for handling student records and organizational memberships in one place.

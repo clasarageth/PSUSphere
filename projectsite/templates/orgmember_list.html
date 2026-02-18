@@ -42,6 +42,7 @@
                                     <th scope="col">Student</th>
                                     <th scope="col">Organization</th>
                                     <th scope="col">Date Joined</th>
+                                    <th scope="col">Action</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -50,6 +51,7 @@
                                     <td>{{ object.student }}</td>
                                     <td>{{ object.organization }}</td>
                                     <td>{{ object.date_joined }}</td>
+                                    <td><a href="orgmember_list/{{ object.id}}">Edit</a></td>
                                 </tr>
                                     {% empty %}
                                     <tr>

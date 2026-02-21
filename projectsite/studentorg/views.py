@@ -9,6 +9,7 @@ from studentorg.forms import OrganizationForm
 from studentorg.forms import OrgMemberForm
 from studentorg.models import Student
 from studentorg.forms import StudentForm
+from studentorg.models import College
 from django.urls import reverse_lazy
 
 class HomePageView(ListView):
@@ -84,3 +85,9 @@ class StudentDeleteView(DeleteView):
     model = Student
     template_name = 'student_del.html'
     success_url = reverse_lazy('student-list')
+    
+class CollegeList(ListView):
+    model = College
+    context_object_name = 'college'
+    template_name = 'college_list.html'
+    paginate_by = 5

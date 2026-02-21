@@ -17,3 +17,9 @@ class StudentForm(ModelForm):
     class Meta:
         model = Student
         fields = "__all__"
+
+from .models import College
+class CollegeForm(ModelForm):
+    class Meta:
+        model = College
+        fields = "__all__"

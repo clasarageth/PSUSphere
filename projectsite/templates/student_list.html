@@ -44,6 +44,7 @@
                                     <th scope="col">First Name</th>
                                     <th scope="col">Middle Name</th>
                                     <th scope="col">Program</th>
+                                    <th scope="col">Action</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -54,6 +55,10 @@
                                     <td>{{ object.firstname }}</td>
                                     <td>{{ object.middlename }}</td>
                                     <td>{{ object.program }}</td>
+                                    <td>
+                                        <a href="student_list/{{ object.id }}">Edit</a>
+                                        <a href="student_list/{{ object.id }}/delete" class="text-danger">Delete</a>
+                                    </td>
                                 </tr>
                                     {% empty %}
                                     <tr>

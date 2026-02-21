@@ -79,3 +79,8 @@ class StudentUpdateView(UpdateView):
     form_class = StudentForm
     template_name = 'student_form.html'
     success_url = reverse_lazy('student-list')
+
+class StudentDeleteView(DeleteView):
+    model = Student
+    template_name = 'student_del.html'
+    success_url = reverse_lazy('student-list')

@@ -50,7 +50,8 @@ class OrganizationList(ListView):
             if query:
                 qs = qs.filter(
                     Q(name__icontains=query) |
-                    Q(description__icontains=query)
+                    Q(description__icontains=query) |
+                    Q(college__college_name__icontains=query)
                 )
             
             return qs

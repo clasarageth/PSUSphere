@@ -23,3 +23,9 @@ class CollegeForm(ModelForm):
     class Meta:
         model = College
         fields = "__all__"
+
+from .models import Program
+class ProgramForm(ModelForm):
+    class Meta:
+        model = Program
+        fields = "__all__"
